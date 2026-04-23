@@ -1,0 +1,31 @@
+{
+  "name": "otrp-bot",
+  "version": "1.0.0",
+  "description": "Discord bot pro komunitu Old Times RP – tickety, moderace, auto-role",
+  "main": "index.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "node --watch index.js",
+    "deploy": "node deploy-commands.js"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "dependencies": {
+    "discord.js": "^14.18.0",
+    "dotenv": "^16.4.5",
+    "html-entities": "^2.5.2",
+    "moment": "^2.30.1",
+    "mysql2": "^3.22.0"
+  },
+  "keywords": [
+    "discord",
+    "bot",
+    "tickets",
+    "moderation",
+    "czech"
+  ],
+  "author": "Old Times RP",
+  "license": "MIT"
+}
