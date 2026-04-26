@@ -19,6 +19,7 @@ const client = new Client({
     GatewayIntentBits.MessageContent,
     GatewayIntentBits.GuildModeration,
     GatewayIntentBits.GuildInvites,
+    GatewayIntentBits.GuildVoiceStates,
   ],
   partials: [
     Partials.Channel,
@@ -79,6 +80,12 @@ async function refreshEmbedConfig() {
       // Other embeds
       'embed_stats_title', 'embed_stats_color',
       'embed_blacklist_title', 'embed_blacklist_color',
+      // Voice & message log embeds
+      'embed_log_voice_join_title', 'embed_log_voice_join_color',
+      'embed_log_voice_leave_title', 'embed_log_voice_leave_color',
+      'embed_log_voice_move_title', 'embed_log_voice_move_color',
+      'embed_log_message_delete_title', 'embed_log_message_delete_color',
+      'embed_log_message_edit_title', 'embed_log_message_edit_color',
     ];
     const overrides = {};
     for (const key of keys) {

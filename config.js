@@ -45,6 +45,8 @@ const config = {
     ticketLog:  process.env.TICKET_LOG_CHANNEL,
     transcript: process.env.TRANSCRIPT_CHANNEL,
     modLog:     process.env.MOD_LOG_CHANNEL,
+    voiceLog:   process.env.VOICE_LOG_CHANNEL,
+    messageLog: process.env.MESSAGE_LOG_CHANNEL,
   },
 
   // ── Výchozí blacklist domén ────────────────────────────────

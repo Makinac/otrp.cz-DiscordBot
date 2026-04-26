@@ -129,6 +129,11 @@ function buildLogEmbed(action, data) {
     member_leave:     { color: COLORS.gray,   title: '📤  ČLEN ODEŠEL' },
     mute_add:         { color: COLORS.orange, title: '🔇  HRÁČ UMLČEN' },
     mute_remove:      { color: COLORS.green,  title: '🔊  MUTE ODSTRANĚN' },
+    voice_join:       { color: COLORS.green,  title: '🎙️  PŘIPOJENÍ DO VOICE' },
+    voice_leave:      { color: COLORS.gray,   title: '🔇  ODPOJENÍ Z VOICE' },
+    voice_move:       { color: COLORS.blue,   title: '🔀  PŘESUN VE VOICE' },
+    message_delete:   { color: COLORS.red,    title: '🗑️  ZPRÁVA SMAZÁNA' },
+    message_edit:     { color: COLORS.orange, title: '✏️  ZPRÁVA UPRAVENA' },
   };
 
   const def = configs[action] || { color: COLORS.gold, title: action };
